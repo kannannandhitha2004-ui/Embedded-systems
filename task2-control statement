@@ -212,5 +212,227 @@ int main()
         printf("%d is not a leap year", year); 
      }
      return 0;
+
+//6.vowels
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    printf("enter your character: ");
+    scanf(" %c", &ch);
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+    ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+        printf("%c is a vowel",ch);
+    }else{
+        printf("%c is a consonant",ch);
+    }
+
+    return 0;
+}*/
+
+//8.switch stmt
+
+/*#include <stdio.h>
+int main(){
+    int month;
+    printf("enter your month: ");
+    scanf("%d",&month);
+    switch(month){
+        case 1:
+        printf("happy new year");
+        break;
+        case 2:
+        printf("leap month");
+        break;
+        case 3 :
+        printf("mothers day");
+        break;
+        case 4:
+        printf("april fool");
+        break;
+        case 5:
+        printf("holidays");
+        break;
+        case 6:
+        printf("schools reopen");
+        break;
+        case 7:
+        printf("this month");
+        break;
+        case 8:
+        printf("independent month");
+        break;
+        case 9:
+        printf("september month");
+        break;
+        case 10:
+        printf("my birthday month");
+        break;
+        case 11:
+        printf("my friend birthday month");
+        break;
+        case 12:
+        printf("final month");
+        break;
+        default:
+        printf("goodbye");
+    }
+    
+    
+}*/
+
+//7.simple calculator
+
+/*#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    char op;
+    printf("enter your numbers: ");
+    scanf("%d %d", &a,&b);
+    printf("enter operator: ");
+    scanf(" %c",&op);
+     switch(op){
+        case '+':
+        printf("%d", a+b);
+        break;
+        case '-':
+        printf("%d", a-b);
+        break;
+        case '*':
+        printf("%d", a*b);
+        break;
+        case '/':
+        printf("%d", a/b);
+        break;
+        
+        default:
+        printf("invalid operator");
+} 
+    return 0;
+}*/
+
+//9.whileloop
+
+/*#include <stdio.h>
+int main(){
+    int n;
+    printf("enter your number: ");
+    scanf("%d",&n);
+    while(n<=10){
+        printf("%d",n);
+        n++;
+    }
+    return 0;
+}*/
+
+//10.all even numbers
+
+/*#include <stdio.h>
+int main(){
+    int n;
+    printf("enter your number: ");
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+    }
+    return 0;
+}*/
+
+//11.sum of the natural number
+
+/*#include <stdio.h>
+int main(){
+    int n;
+    int sum = 0;
+    printf("enter your number: ");
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++){
+        sum+=i;
+        
+    }
+    printf("%d",sum);
+    
+}*/
+
+//12.factorial
+
+/*#include <stdio.h>
+int main(){
+    int n;
+    int fact = 1;
+    printf("enter your number: ");
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++){
+        fact*=i;
+        
+    }
+    printf("%d",fact);
+    
+}*/
+
+//13.last two digits
+
+/*#include <stdio.h>
+int main(){
+    int n;
+ printf("enter your number: ");
+    scanf("%d",&n);
+   int ld = n%100;
+         printf("%d",ld);
+    }*/
+   
+//14.palindrome
+
+/*#include <stdio.h>
+int main(){
+    int n, temp, reverse = 0, digit;
+ printf("enter your number: ");
+    scanf("%d",&n);
+    temp = n;
+     while(n > 0)
+    {
+        digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n = n / 10;
+    }
+
+    if(temp == reverse)
+    {
+        printf("%d is a Palindrome", temp);
+    }
+    else
+    {
+        printf("%d is Not a Palindrome", temp);
+    }
+
+    return 0;
+}*/
+        
+//15.prime number
+
+#include <stdio.h>
+int main(){
+    int n;
+    printf("enter your number: ");
+    scanf("%d",&n);
+    int count = 0;
+    for(int i=1; i<=n; i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+        printf("prime number");
+    }else{
+        printf("not a prime number");
+    }
+    return 0;
+}
  }*/
  
