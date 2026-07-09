@@ -1,0 +1,94 @@
+//1.strlen()
+
+/*#include <stdio.h>
+#include<string.h>
+int main() {
+     char ch[20];
+    printf("enter your character: ");
+    scanf("%s",&ch);
+    printf("%d",strlen(ch));
+    return 0;
+}*/
+
+//2.strcpy()
+
+/*#include <stdio.h>
+#include<string.h>
+int main() {
+     
+     char ch1[20];
+     char ch2[20];
+    printf("enter your character: ");
+    scanf(" %s %s",ch1,ch2);
+    printf("before copy = %s \n",ch1);
+    strcpy(ch1,ch2);
+    printf("after copy  = %s \n",ch1);
+    
+    return 0;
+}*/
+
+//3.strcmp()
+
+/*#include <stdio.h>
+#include<string.h>
+int main() {
+     
+     char ch1[20];
+     char ch2[20];
+    printf("enter your character: ");
+    scanf(" %s %s",ch1,ch2);
+    if(strcmp(ch1,ch2)>0){
+        printf("%s is a greater string\n",ch1);
+    }else if(strcmp(ch2,ch1)>0){
+        printf("%s is a greater string\n",ch2);
+    }else{
+        printf("both are equal");
+    }
+    
+    return 0;
+}*/
+
+//4.sqrt()
+
+/*#include <stdio.h>
+#include<string.h>
+#include<math.h>
+int main() {
+     
+     int a;
+    printf("enter your number: ");
+    scanf(" %d",&a);
+    printf("%.2f",sqrt(a));
+    
+    return 0;
+}*/
+
+//5.uppercase lowercase
+
+/*#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main() {
+     
+     char name[20];
+     char name1[20];
+    printf("enter your names: ");
+    scanf(" %s %s",name,name1);
+    for(int i=0; name[i]!='\0'; i++){
+        name[i]=toupper(name[i]);
+        }
+    printf("%s\n",name);
+    
+    for(int i=0; name1[i]!='\0'; i++){
+        name1[i]=toupper(name1[i]);
+       
+    }
+     printf("%s\n",name1);
+    
+    if(strcmp(name,name1)==0){
+        printf("both are same employee\n");
+    }else
+        printf("both are different employee");
+    
+    return 0;
+}*/
