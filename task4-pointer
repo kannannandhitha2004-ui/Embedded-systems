@@ -1,0 +1,109 @@
+//1.swapping
+
+/*#include <stdio.h>
+void swap(int* x, int* y){
+     int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main()
+{
+   int a,b;
+   printf("enter your value: ");
+   scanf("%d %d",&a,&b);
+   printf("before swapping %d %d\n",a,b);
+   swap(&a,&b);
+    printf("after swapping %d %d",a,b);
+  
+    return 0;
+}*/
+
+//2.largest element
+
+/*#include<stdio.h>
+int main(){
+    int arr[10] = {10,20,30,40,50};
+    int *p = arr;
+    int largest;
+    largest = *p;
+    for(int i=1; i<5; i++){
+        p++;
+        if(*p>largest){
+            largest = *p;
+            }
+        }
+    printf("largest = %d",largest);
+    
+}*/
+
+//3.reverse the array using pointer
+
+/*#include<stdio.h>
+int main(){
+ int arr[6] = {9,8,7,6,5};
+ int *start = arr;
+ int *end = arr+4;
+ int temp = 0;
+ while(start<end){
+     temp = *start;
+     *start = *end;
+     *end = temp;
+     start++;
+     end--;
+      }
+     int *p = arr;
+     while(p < arr+5){
+         printf("%d" ,*p);
+         p++;
+     }
+}*/
+
+//4.increment in pointer
+
+/*#include<stdio.h>
+int increment(int *p){
+    (*p)++;
+}
+int main(){
+    int a;
+    printf("enter the value: ");
+    scanf("%d",&a);
+    increment(&a);
+    printf("%d",a);
+    
+}*/
+
+//5.demonstrate int **p
+
+/*#include<stdio.h>
+int main(){
+    int a = 10;
+    int *p = &a;
+    int **pp = &p;
+    printf("%d",**pp);
+}*/
+
+//6.change the address
+
+/*#include <stdio.h>
+
+void changeAddress(int **pp, int *b)
+{
+    *pp = b;
+}
+
+int main()
+{
+    int a = 10, b = 20;
+
+    int *p = &a;
+
+    printf("Before: %d\n", *p);
+
+    changeAddress(&p, &b);
+
+    printf("After: %d", *p);
+
+    return 0;
+}*/
