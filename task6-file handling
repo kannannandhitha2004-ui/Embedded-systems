@@ -1,0 +1,112 @@
+//1.struct
+
+/*#include<string.h>
+#include <stdio.h>
+struct employee{
+    char name[10];
+    float monthsal;
+    float annualsal;
+};
+
+int main()
+{
+    struct employee e1;
+    printf("enter your name: ");
+    scanf("%s", e1.name);
+     printf("enter your monthsal: ");
+    scanf("%f", &e1.monthsal);
+    e1.annualsal = e1.monthsal*12;
+    printf("%.f",e1.annualsal);
+     return 0;
+}*/
+
+//2.union
+
+/*#include<string.h>
+#include <stdio.h>
+union movie{
+    char moviename[10];
+    int screenno;
+    int ticketprice;
+};
+
+int main()
+{
+    union movie m;
+    printf("movie name: ");
+    scanf("%s", m.moviename);
+    printf("%s\n",m.moviename);
+     printf("screenno: ");
+    scanf("%d", &m.screenno);
+    printf("%d\n",m.screenno);
+    printf("your ticketprice: ");
+    scanf("%d", &m.ticketprice);
+    printf("%d\n",m.ticketprice);
+     return 0;
+}*/
+
+//3.enum represent switch stmt
+
+/*#include<stdio.h>
+enum Menu{
+    ITEM1 = 1,
+    ITEM2,
+    ITEM3,
+    ITEM4,
+    ITEM5,
+};
+int main(){
+    int choice;
+    printf("-----HOTEL MENU-----\n");
+    printf("1.BRIYANI\n");
+    printf("2.PANNER\n");
+    printf("3.TANDOORI\n");
+    printf("4.CHIKENRICE\n");
+    printf("5.NOODLES\n");
+    printf("enter you choice: ");
+    scanf("%d",&choice);
+    switch(choice){
+        case ITEM1:
+        printf("BRIYANI\n");
+        break;
+         case ITEM2:
+        printf("PANNER\n");
+        break;
+         case ITEM3:
+         printf("TANDOORI\n");
+        break;
+         case ITEM4:
+        printf("CHIKENRICE\n");
+        break;
+         case ITEM5:
+        printf("NOODLES\n");
+        break;
+        default:
+        printf("other choice");
+    }
+    
+    
+}*/
+
+//4.calculate area of circle using #define
+
+/*#include<stdio.h>
+#define PI 3.141
+
+int main(){
+    float r = 5;
+    float area = PI*r*r;
+    printf("%.f",area);
+    }*/
+    
+//5.conditional compilation
+
+/*#include<stdio.h>
+#define DEBUG
+
+int main(){
+    #ifdef DEBUG
+        printf("debug mood");
+    #endif
+    return 0;
+}*/
